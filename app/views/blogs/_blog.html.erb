@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="app/assets/stylesheets/blog.scss">
+
+<div class="col-md-4">
+  <div class="ui card", style="margin-top: 25px">
+
+    <div class="content">
+      <div class=".d-flex">
+        <a class="header"><%= blog.title %></a>
+        <% if blog.active == true %>
+          ( <a class="active"> active </a> )
+        <% else %>
+          ( <a class="inactive"> inactive </a> )
+        <% end %>
+      </div>
+      <div class="description">
+        <%= blog.description %>
+      </div>
+      <div>
+        <%= link_to "Show", blog %>
+      </div>
+    </div>
+  </div>
+</div>
